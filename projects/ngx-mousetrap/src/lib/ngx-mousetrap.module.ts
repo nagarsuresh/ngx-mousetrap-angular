@@ -1,12 +1,22 @@
-import { NgModule } from '@angular/core';
-import { NgxMousetrapComponent } from './ngx-mousetrap.component';
+import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgxMousetrapDirective } from './ngx-mousetrap.directive';
+import { NgxMousetrapService } from './ngx-mousetrap.service';
 
 
 
 @NgModule({
-  declarations: [NgxMousetrapComponent],
-  imports: [
-  ],
-  exports: [NgxMousetrapComponent]
+  declarations: [NgxMousetrapDirective],
+  imports: [],
+  exports: [NgxMousetrapDirective],
+  providers: [NgxMousetrapService]
 })
-export class NgxMousetrapModule { }
+export class NgxMousetrapModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: NgxMousetrapModule,
+      providers: [
+        NgxMousetrapService
+      ]
+    };
+  }
+}
