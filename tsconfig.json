@@ -17,7 +17,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-mousetrap": [
+        "dist/ngx-mousetrap/ngx-mousetrap",
+        "dist/ngx-mousetrap"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
