@@ -1,0 +1,33 @@
+{
+  "name": "ngx-mousetrap",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.0.7",
+    "@angular/core": "^9.0.7",
+    "mousetrap": "^1.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nagarsuresh/ngx-mousetrap-angular.git"
+  },
+  "keywords": [
+    "mousetrap",
+    "ngx",
+    "angular"
+  ],
+  "main": "bundles/ngx-mousetrap.umd.js",
+  "module": "fesm5/ngx-mousetrap.js",
+  "es2015": "fesm2015/ngx-mousetrap.js",
+  "esm5": "esm5/ngx-mousetrap.js",
+  "esm2015": "esm2015/ngx-mousetrap.js",
+  "fesm5": "fesm5/ngx-mousetrap.js",
+  "fesm2015": "fesm2015/ngx-mousetrap.js",
+  "typings": "ngx-mousetrap.d.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  }
+}
