@@ -6,7 +6,7 @@ import { async, TestBed, ComponentFixture } from '@angular/core/testing';
 @Component({
   selector: 'lib-test-hotkey-directive',
   template: `
-    <button (click)="clicked()" [paceHotkey]="hotKey" *ngIf="displayButton"
+    <button (click)="clicked()" [ngxMousetrapKey]="hotKey" *ngIf="displayButton"
       [suppressAutoClick]="suppressAutoClick">Click Me</button>
   `,
   providers: []
@@ -29,6 +29,7 @@ describe('NgxMousetrapDirective', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
+        NgxMousetrapDirective,
         TestHotKeyDirectiveComponent
       ],
     }).compileComponents();

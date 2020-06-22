@@ -3,11 +3,11 @@ import { NgxKeyEvent } from './utils';
 import { NgxMousetrapService } from './ngx-mousetrap.service';
 
 @Directive({
-  selector: '[ngxMousetrap]'
+  selector: '[ngxMousetrapKey]'
 })
 export class NgxMousetrapDirective implements OnInit, OnDestroy {
   // list of hot key combination for this element.
-  @Input() mousetrapKey: string;
+  @Input() ngxMousetrapKey: string;
 
   // by default simulate click event on the element if hotkey is pressed.
   // use this flag to turn off the behavior
@@ -22,12 +22,12 @@ export class NgxMousetrapDirective implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    if (!this.mousetrapKey) {
+    if (!this.ngxMousetrapKey) {
       console.error(`No hotkey available for ${this.elementRef.nativeElement}`);
       return;
     }
 
-    this.ngxMousetrapService.register(this.mousetrapKey).subscribe(hkEvent => {
+    this.ngxMousetrapService.register(this.ngxMousetrapKey).subscribe(hkEvent => {
       if (!this.suppressAutoClick) {
         (this.elementRef.nativeElement as HTMLElement).dispatchEvent(new Event('click'));
       }
@@ -36,8 +36,8 @@ export class NgxMousetrapDirective implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    if (this.mousetrapKey) {
-      this.ngxMousetrapService.unregister(null, this.mousetrapKey);
+    if (this.ngxMousetrapKey) {
+      this.ngxMousetrapService.unregister(null, this.ngxMousetrapKey);
     }
   }
 

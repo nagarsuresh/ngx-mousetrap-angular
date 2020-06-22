@@ -1,24 +1,26 @@
 # NgxMousetrap
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+An Angular library to use [mousetrap](https://www.npmjs.com/package/mousetrap) as Angular service or Angular Directive.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name --project ngx-mousetrap` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-mousetrap`.
-> Note: Don't forget to add `--project ngx-mousetrap` or else it will be added to the default project in your `angular.json` file. 
+### Using as Directive
+```
+<button class="btn btn-primary"  (click)="onClick()" [ngxMousetrapKey]="'command+enter | ctrl+enter'">Click or press (command/ctrl)+enter</button>
 
-## Build
+```
 
-Run `ng build ngx-mousetrap` to build the project. The build artifacts will be stored in the `dist/` directory.
+When the keyboard shortcut is pressed, button will get clicked!
 
-## Publishing
+### Using as Angular Service
+```
+    const saveKey = 'command+s | ctrl+s'
+    this.subscription = this.ngxMousetrapService.register(saveKey).
+      subscribe(evt => {
+        <!-- save hotkey pressed -->
+      });
 
-After building your library with `ng build ngx-mousetrap`, go to the dist folder `cd dist/ngx-mousetrap` and run `npm publish`.
+```
 
-## Running unit tests
-
-Run `ng test ngx-mousetrap` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Repo
+https://github.com/nagarsuresh/ngx-mousetrap-angular.git

@@ -3,11 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "prestart": "ng build ngx-mousetrap",
+    "start": "ng serve --port 4204 --open",
+    "prebuild": "ng test ngx-mousetrap && ng build ngx-mousetrap",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:ngx-mousetrap": "ng test ngx-mousetrap && ng build ngx-mousetrap"
   },
   "private": true,
   "dependencies": {
@@ -19,10 +22,14 @@
     "@angular/platform-browser": "~9.0.3",
     "@angular/platform-browser-dynamic": "~9.0.3",
     "@angular/router": "~9.0.3",
+    "@clr/angular": "^3.1.4",
     "mousetrap": "^1.6.5",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "@clr/ui": "^3.0.0",
+    "@clr/icons": "^3.0.0",
+    "@webcomponents/webcomponentsjs": "^2.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.4",
