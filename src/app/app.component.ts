@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { NgxMousetrapService } from 'projects/ngx-mousetrap/src/public-api';
 import { Subscription } from 'rxjs';
 
@@ -17,12 +17,15 @@ export class AppComponent implements OnInit, OnDestroy {
 
   private subscription: Subscription;
 
+  @ViewChild('demoArea', { read: ElementRef, static: true })
+  demoArea: ElementRef;
+
   constructor(private service: NgxMousetrapService) {
 
   }
 
   ngOnInit() {
-    this.subscription = this.service.register(this.keysBound).subscribe(evt => {
+    this.subscription = this.service.register(this.keysBound, this.demoArea.nativeElement).subscribe(evt => {
       this.keypressed.push(`Detected ${evt.key}`);
     });
   }

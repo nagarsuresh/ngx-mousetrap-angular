@@ -15,8 +15,16 @@
         Clicked at {{clickedAt}}
       </div>
 
-      <div class="service-demo" tabindex="0">
-        NgxMousetrap Service Demo Area. Following keys are bound
+      <div class="service-demo" tabindex="0" #demoArea>
+        NgxMousetrap Service Demo Area. <br/>
+        <clr-alert>
+          <clr-alert-item>
+              <span class="alert-text">
+                Keys are bound only to this area, focus this area before pressing hotkeys.
+              </span>
+          </clr-alert-item>
+      </clr-alert>
+        Following keys are bound
         <br />
         {{keysBound}}
         <div *ngFor="let key of keypressed">
