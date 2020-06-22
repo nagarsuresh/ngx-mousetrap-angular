@@ -23,6 +23,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+            "baseHref": "/ngx-mousetrap-angular/",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -72,7 +73,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-mousetrap-angular:build"
+            "browserTarget": "ngx-mousetrap-angular:build",
+            "baseHref": "/ngx-mousetrap-angular/"
           },
           "configurations": {
             "production": {
@@ -127,6 +129,10 @@
               "devServerTarget": "ngx-mousetrap-angular:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     },

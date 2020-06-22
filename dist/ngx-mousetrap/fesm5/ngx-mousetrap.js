@@ -1,4 +1,5 @@
-import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, EventEmitter, ɵɵdirectiveInject, ElementRef, ɵɵdefineDirective, Directive, Input, Output, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { __decorate } from 'tslib';
+import { ɵɵdefineInjectable, Injectable, EventEmitter, ElementRef, Input, Output, Directive, NgModule } from '@angular/core';
 import { EMPTY, Subject } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
 import * as Mousetrap from 'mousetrap';
@@ -99,16 +100,14 @@ var NgxMousetrapService = /** @class */ (function () {
             keyMap.delete(key);
         }
     };
-    NgxMousetrapService.ɵfac = function NgxMousetrapService_Factory(t) { return new (t || NgxMousetrapService)(); };
-    NgxMousetrapService.ɵprov = ɵɵdefineInjectable({ token: NgxMousetrapService, factory: NgxMousetrapService.ɵfac, providedIn: 'root' });
+    NgxMousetrapService.ɵprov = ɵɵdefineInjectable({ factory: function NgxMousetrapService_Factory() { return new NgxMousetrapService(); }, token: NgxMousetrapService, providedIn: "root" });
+    NgxMousetrapService = __decorate([
+        Injectable({
+            providedIn: 'root'
+        })
+    ], NgxMousetrapService);
     return NgxMousetrapService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NgxMousetrapService, [{
-        type: Injectable,
-        args: [{
-                providedIn: 'root'
-            }]
-    }], function () { return []; }, null); })();
 
 var NgxMousetrapDirective = /** @class */ (function () {
     function NgxMousetrapDirective(elementRef, ngxMousetrapService) {
@@ -135,48 +134,50 @@ var NgxMousetrapDirective = /** @class */ (function () {
             this.ngxMousetrapService.unregister(null, this.ngxMousetrapKey);
         }
     };
-    NgxMousetrapDirective.ɵfac = function NgxMousetrapDirective_Factory(t) { return new (t || NgxMousetrapDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgxMousetrapService)); };
-    NgxMousetrapDirective.ɵdir = ɵɵdefineDirective({ type: NgxMousetrapDirective, selectors: [["", "ngxMousetrapKey", ""]], inputs: { ngxMousetrapKey: "ngxMousetrapKey", suppressAutoClick: "suppressAutoClick" }, outputs: { mousetrapKeyPressed: "mousetrapKeyPressed" } });
+    NgxMousetrapDirective.ctorParameters = function () { return [
+        { type: ElementRef },
+        { type: NgxMousetrapService }
+    ]; };
+    __decorate([
+        Input()
+    ], NgxMousetrapDirective.prototype, "ngxMousetrapKey", void 0);
+    __decorate([
+        Input()
+    ], NgxMousetrapDirective.prototype, "suppressAutoClick", void 0);
+    __decorate([
+        Output()
+    ], NgxMousetrapDirective.prototype, "mousetrapKeyPressed", void 0);
+    NgxMousetrapDirective = __decorate([
+        Directive({
+            selector: '[ngxMousetrapKey]'
+        })
+    ], NgxMousetrapDirective);
     return NgxMousetrapDirective;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NgxMousetrapDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[ngxMousetrapKey]'
-            }]
-    }], function () { return [{ type: ElementRef }, { type: NgxMousetrapService }]; }, { ngxMousetrapKey: [{
-            type: Input
-        }], suppressAutoClick: [{
-            type: Input
-        }], mousetrapKeyPressed: [{
-            type: Output
-        }] }); })();
 
 var NgxMousetrapModule = /** @class */ (function () {
     function NgxMousetrapModule() {
     }
+    NgxMousetrapModule_1 = NgxMousetrapModule;
     NgxMousetrapModule.forRoot = function () {
         return {
-            ngModule: NgxMousetrapModule,
+            ngModule: NgxMousetrapModule_1,
             providers: [
                 NgxMousetrapService
             ]
         };
     };
-    NgxMousetrapModule.ɵmod = ɵɵdefineNgModule({ type: NgxMousetrapModule });
-    NgxMousetrapModule.ɵinj = ɵɵdefineInjector({ factory: function NgxMousetrapModule_Factory(t) { return new (t || NgxMousetrapModule)(); }, providers: [NgxMousetrapService], imports: [[]] });
+    var NgxMousetrapModule_1;
+    NgxMousetrapModule = NgxMousetrapModule_1 = __decorate([
+        NgModule({
+            declarations: [NgxMousetrapDirective],
+            imports: [],
+            exports: [NgxMousetrapDirective],
+            providers: [NgxMousetrapService]
+        })
+    ], NgxMousetrapModule);
     return NgxMousetrapModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NgxMousetrapModule, { declarations: [NgxMousetrapDirective], exports: [NgxMousetrapDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NgxMousetrapModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [NgxMousetrapDirective],
-                imports: [],
-                exports: [NgxMousetrapDirective],
-                providers: [NgxMousetrapService]
-            }]
-    }], null, null); })();
 
 /*
  * Public API Surface of ngx-mousetrap

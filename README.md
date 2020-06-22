@@ -22,4 +22,5 @@ When the keyboard shortcut is pressed, button will get clicked!
 
 ```
 
-
+## Demo
+https://nagarsuresh.github.io/ngx-mousetrap-angular/
