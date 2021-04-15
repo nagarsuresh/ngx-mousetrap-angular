@@ -50,7 +50,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -74,7 +73,9 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "ngx-mousetrap-angular:build",
-            "baseHref": "/ngx-mousetrap-angular/"
+            "baseHref": "/ngx-mousetrap-angular/",
+            "port": 4204,
+            "open": true
           },
           "configurations": {
             "production": {
@@ -143,7 +144,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/ngx-mousetrap/tsconfig.lib.json",
             "project": "projects/ngx-mousetrap/ng-package.json"

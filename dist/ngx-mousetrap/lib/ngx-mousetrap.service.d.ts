@@ -1,6 +1,5 @@
 import { NgxKeyEvent } from './utils';
 import { Observable } from 'rxjs';
-import * as ɵngcc0 from '@angular/core';
 export declare class NgxMousetrapService {
     private mousetrap;
     private scopedMouseTrap;
@@ -26,7 +25,5 @@ export declare class NgxMousetrapService {
      * @param keyMap key map
      */
     private _unregister;
-    static ɵfac: ɵngcc0.ɵɵFactoryDef<NgxMousetrapService, never>;
 }
-
 //# sourceMappingURL=ngx-mousetrap.service.d.ts.map

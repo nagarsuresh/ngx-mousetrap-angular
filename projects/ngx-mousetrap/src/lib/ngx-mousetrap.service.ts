@@ -9,9 +9,12 @@ import * as Mousetrap from 'mousetrap';
 })
 export class NgxMousetrapService {
   // current mousetrap instance
-  private mousetrap: MousetrapInstance;
+  private mousetrap: Mousetrap.MousetrapInstance;
 
-  private scopedMouseTrap: WeakMap<HTMLElement, { mousetrap: MousetrapInstance, keyMap: Map<string, NgxKeyHandler> }> = new WeakMap();
+  private scopedMouseTrap: WeakMap<HTMLElement, {
+    mousetrap: Mousetrap.MousetrapInstance,
+    keyMap: Map<string, NgxKeyHandler>
+  }> = new WeakMap();
 
   // map of keycombination and hotkey details.
   private keyMap: Map<string, NgxKeyHandler> = new Map();
@@ -107,7 +110,7 @@ export class NgxMousetrapService {
    * @param mousetrap mousetrap instance
    * @param keyMap key map
    */
-  private _unregister(key: string, mousetrap: MousetrapInstance, keyMap: Map<string, NgxKeyHandler>) {
+  private _unregister(key: string, mousetrap: Mousetrap.MousetrapInstance, keyMap: Map<string, NgxKeyHandler>) {
     mousetrap.unbind(key);
     if (keyMap.has(key)) {
       const value = keyMap.get(key);
