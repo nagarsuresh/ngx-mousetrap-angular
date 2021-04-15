@@ -11,7 +11,7 @@ import { NgxMousetrapService } from './ngx-mousetrap.service';
   providers: [NgxMousetrapService]
 })
 export class NgxMousetrapModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<NgxMousetrapModule> {
     return {
       ngModule: NgxMousetrapModule,
       providers: [

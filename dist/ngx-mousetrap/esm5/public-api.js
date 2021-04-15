@@ -1,7 +1,0 @@
-/*
- * Public API Surface of ngx-mousetrap
- */
-export * from './lib/ngx-mousetrap.service';
-export * from './lib/ngx-mousetrap.directive';
-export * from './lib/ngx-mousetrap.module';
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25neC1tb3VzZXRyYXAvIiwic291cmNlcyI6WyJwdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYyw2QkFBNkIsQ0FBQztBQUM1QyxjQUFjLCtCQUErQixDQUFDO0FBQzlDLGNBQWMsNEJBQTRCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIG5neC1tb3VzZXRyYXBcbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL2xpYi9uZ3gtbW91c2V0cmFwLnNlcnZpY2UnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LW1vdXNldHJhcC5kaXJlY3RpdmUnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LW1vdXNldHJhcC5tb2R1bGUnO1xuIl19

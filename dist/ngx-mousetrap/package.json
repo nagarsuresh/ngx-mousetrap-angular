@@ -1,14 +1,17 @@
 {
   "name": "ngx-mousetrap",
-  "version": "1.0.0",
+  "version": "10.0.0",
   "peerDependencies": {
-    "@angular/common": "^9.0.7",
-    "@angular/core": "^9.0.7",
+    "@angular/common": "^10.2.5",
+    "@angular/core": "^10.2.5",
     "mousetrap": "^1.6.5"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/nagarsuresh/ngx-mousetrap-angular.git"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
   },
   "keywords": [
     "mousetrap",
@@ -16,26 +19,11 @@
     "angular"
   ],
   "main": "bundles/ngx-mousetrap.umd.js",
-  "module": "fesm5/ngx-mousetrap.js",
-  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngx-mousetrap.js",
+  "module": "fesm2015/ngx-mousetrap.js",
   "es2015": "fesm2015/ngx-mousetrap.js",
-  "esm5": "esm5/ngx-mousetrap.js",
   "esm2015": "esm2015/ngx-mousetrap.js",
-  "fesm5": "fesm5/ngx-mousetrap.js",
-  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngx-mousetrap.js",
   "fesm2015": "fesm2015/ngx-mousetrap.js",
   "typings": "ngx-mousetrap.d.ts",
   "metadata": "ngx-mousetrap.metadata.json",
-  "sideEffects": false,
-  "dependencies": {
-    "tslib": "^1.10.0"
-  },
-  "__processed_by_ivy_ngcc__": {
-    "es2015": "9.0.7",
-    "fesm2015": "9.0.7",
-    "typings": "9.0.7"
-  },
-  "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
-  }
+  "sideEffects": false
 }
