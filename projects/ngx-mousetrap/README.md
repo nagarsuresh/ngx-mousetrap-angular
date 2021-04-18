@@ -6,7 +6,11 @@ An Angular library to use [mousetrap](https://www.npmjs.com/package/mousetrap) a
 
 ### Using as Directive
 ```
-<button class="btn btn-primary"  (click)="onClick()" [ngxMousetrapKey]="'command+enter | ctrl+enter'">Click or press (command/ctrl)+enter</button>
+<button class="btn btn-primary"
+  (click)="onClick()"
+  [ngxMousetrapKey]="'command+enter | ctrl+enter'">
+    Click or press (command/ctrl)+enter
+</button>
 
 ```
 
@@ -24,3 +28,7 @@ When the keyboard shortcut is pressed, button will get clicked!
 
 ## Demo
 https://nagarsuresh.github.io/ngx-mousetrap-angular/
+
+## NPM
+https://www.npmjs.com/package/ngx-mousetrap
+

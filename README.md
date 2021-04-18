@@ -6,7 +6,11 @@ An Angular library to use [mousetrap](https://www.npmjs.com/package/mousetrap) a
 
 ### Using as Directive
 ```
-<button class="btn btn-primary"  (click)="onClick()" [ngxMousetrapKey]="'command+enter | ctrl+enter'">Click or press (command/ctrl)+enter</button>
+<button class="btn btn-primary"
+  (click)="onClick()"
+  [ngxMousetrapKey]="'command+enter | ctrl+enter'">
+    Click or press (command/ctrl)+enter
+</button>
 
 ```
 
