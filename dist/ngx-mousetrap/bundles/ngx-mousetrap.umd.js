@@ -24,6 +24,7 @@
         return Object.freeze(n);
     }
 
+    var i0__namespace = /*#__PURE__*/_interopNamespace(i0);
     var Mousetrap__namespace = /*#__PURE__*/_interopNamespace(Mousetrap);
 
     var NgxMousetrapService = /** @class */ (function () {
@@ -124,7 +125,7 @@
         };
         return NgxMousetrapService;
     }());
-    NgxMousetrapService.ɵprov = i0.ɵɵdefineInjectable({ factory: function NgxMousetrapService_Factory() { return new NgxMousetrapService(); }, token: NgxMousetrapService, providedIn: "root" });
+    NgxMousetrapService.ɵprov = i0__namespace.ɵɵdefineInjectable({ factory: function NgxMousetrapService_Factory() { return new NgxMousetrapService(); }, token: NgxMousetrapService, providedIn: "root" });
     NgxMousetrapService.decorators = [
         { type: i0.Injectable, args: [{
                     providedIn: 'root'

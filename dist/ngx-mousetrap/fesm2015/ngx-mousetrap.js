@@ -1,4 +1,5 @@
-import { ɵɵdefineInjectable, Injectable, EventEmitter, Directive, ElementRef, Input, Output, NgModule } from '@angular/core';
+import * as i0 from '@angular/core';
+import { Injectable, EventEmitter, Directive, ElementRef, Input, Output, NgModule } from '@angular/core';
 import { EMPTY, Subject } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
 import * as Mousetrap from 'mousetrap';
@@ -93,7 +94,7 @@ class NgxMousetrapService {
         }
     }
 }
-NgxMousetrapService.ɵprov = ɵɵdefineInjectable({ factory: function NgxMousetrapService_Factory() { return new NgxMousetrapService(); }, token: NgxMousetrapService, providedIn: "root" });
+NgxMousetrapService.ɵprov = i0.ɵɵdefineInjectable({ factory: function NgxMousetrapService_Factory() { return new NgxMousetrapService(); }, token: NgxMousetrapService, providedIn: "root" });
 NgxMousetrapService.decorators = [
     { type: Injectable, args: [{
                 providedIn: 'root'
