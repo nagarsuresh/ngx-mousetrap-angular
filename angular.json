@@ -88,8 +88,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "ngx-mousetrap-angular:build",
-            "baseHref": "/ngx-mousetrap-angular/",
-            "port": 4204,
+            "servePath": "/ngx-mousetrap-angular/",
+            "port": 4209,
             "open": true
           },
           "configurations": {
@@ -119,19 +119,6 @@
               "src/styles.scss"
             ],
             "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         },
         "e2e": {
@@ -176,18 +163,6 @@
             "main": "projects/ngx-mousetrap/src/test.ts",
             "tsConfig": "projects/ngx-mousetrap/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-mousetrap/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/ngx-mousetrap/tsconfig.lib.json",
-              "projects/ngx-mousetrap/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }

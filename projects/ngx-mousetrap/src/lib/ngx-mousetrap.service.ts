@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { NgxKeyHandler, NgxKeyEvent } from './utils';
 import { Observable, EMPTY, Subject } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
-import * as Mousetrap from 'mousetrap';
+import Mousetrap from 'mousetrap';
 
 @Injectable({
   providedIn: 'root'

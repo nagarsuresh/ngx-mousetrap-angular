@@ -1,9 +1,9 @@
 {
   "name": "ngx-mousetrap",
-  "version": "12.0.0",
+  "version": "13.0.0",
   "peerDependencies": {
-    "@angular/common": "^12.1.1",
-    "@angular/core": "^12.1.1",
+    "@angular/common": "13.0.2",
+    "@angular/core": "13.0.2",
     "mousetrap": "^1.6.5"
   },
   "repository": {
@@ -18,24 +18,24 @@
     "ngx",
     "angular"
   ],
-  "main": "bundles/ngx-mousetrap.umd.js",
-  "module_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngx-mousetrap.js",
-  "module": "fesm2015/ngx-mousetrap.js",
-  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngx-mousetrap.js",
-  "es2015": "fesm2015/ngx-mousetrap.js",
-  "esm2015": "esm2015/ngx-mousetrap.js",
-  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ngx-mousetrap.js",
-  "fesm2015": "fesm2015/ngx-mousetrap.js",
+  "module": "fesm2015/ngx-mousetrap.mjs",
+  "es2020": "fesm2020/ngx-mousetrap.mjs",
+  "esm2020": "esm2020/ngx-mousetrap.mjs",
+  "fesm2020": "fesm2020/ngx-mousetrap.mjs",
+  "fesm2015": "fesm2015/ngx-mousetrap.mjs",
   "typings": "ngx-mousetrap.d.ts",
-  "metadata": "ngx-mousetrap.metadata.json",
-  "sideEffects": false,
-  "__processed_by_ivy_ngcc__": {
-    "es2015": "12.1.1",
-    "fesm2015": "12.1.1",
-    "module": "12.1.1",
-    "typings": "12.1.1"
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./ngx-mousetrap.d.ts",
+      "esm2020": "./esm2020/ngx-mousetrap.mjs",
+      "es2020": "./fesm2020/ngx-mousetrap.mjs",
+      "es2015": "./fesm2015/ngx-mousetrap.mjs",
+      "node": "./fesm2015/ngx-mousetrap.mjs",
+      "default": "./fesm2020/ngx-mousetrap.mjs"
+    }
   },
-  "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
-  }
+  "sideEffects": false
 }

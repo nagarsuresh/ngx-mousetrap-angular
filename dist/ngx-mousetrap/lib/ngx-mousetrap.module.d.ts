@@ -1,11 +1,10 @@
 import { ModuleWithProviders } from '@angular/core';
-import * as ɵngcc0 from '@angular/core';
-import * as ɵngcc1 from './ngx-mousetrap.directive';
+import * as i0 from "@angular/core";
+import * as i1 from "./ngx-mousetrap.directive";
 export declare class NgxMousetrapModule {
     static forRoot(): ModuleWithProviders<NgxMousetrapModule>;
-    static ɵfac: ɵngcc0.ɵɵFactoryDeclaration<NgxMousetrapModule, never>;
-    static ɵmod: ɵngcc0.ɵɵNgModuleDeclaration<NgxMousetrapModule, [typeof ɵngcc1.NgxMousetrapDirective], never, [typeof ɵngcc1.NgxMousetrapDirective]>;
-    static ɵinj: ɵngcc0.ɵɵInjectorDeclaration<NgxMousetrapModule>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<NgxMousetrapModule, never>;
+    static ɵmod: i0.ɵɵNgModuleDeclaration<NgxMousetrapModule, [typeof i1.NgxMousetrapDirective], never, [typeof i1.NgxMousetrapDirective]>;
+    static ɵinj: i0.ɵɵInjectorDeclaration<NgxMousetrapModule>;
 }
-
 //# sourceMappingURL=ngx-mousetrap.module.d.ts.map
