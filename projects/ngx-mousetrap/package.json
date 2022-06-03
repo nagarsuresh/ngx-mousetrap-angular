@@ -3,7 +3,7 @@
   "version": "13.0.0",
   "peerDependencies": {
     "@angular/common": "13.0.2",
-    "@angular/core": "13.0.2",
+    "@angular/core": "11.0.5",
     "mousetrap": "^1.6.5"
   },
   "repository": {
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@angular/common": "13.0.2",
-    "@angular/core": "13.0.2",
+    "@angular/core": "11.0.5",
     "mousetrap": "^1.6.5"
   },
   "dependencies": {
