@@ -20,8 +20,8 @@
     ],
     "paths": {
       "ngx-mousetrap": [
-        "dist/ngx-mousetrap/ngx-mousetrap",
-        "dist/ngx-mousetrap"
+        "dist/angular-mousetrap/ngx-mousetrap",
+        "dist/angular-mousetrap"
       ]
     }
   },
