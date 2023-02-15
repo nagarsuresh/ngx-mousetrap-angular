@@ -1,6 +1,8 @@
-# NgxMousetrap
+# Angular Moustrap
 
 An Angular library to use [mousetrap](https://www.npmjs.com/package/mousetrap) as Angular service or Angular Directive.
+
+Forked from ngx-mousetrap: https://github.com/nagarsuresh/ngx-mousetrap-angular
 
 ## Getting Started
 

@@ -1,17 +1,17 @@
 {
-  "name": "ngx-mousetrap-angular",
+  "name": "angular-mousetrap",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "prestart": "ng build ngx-mousetrap",
+    "prestart": "ng build angular-mousetrap",
     "start": "ng serve",
-    "prebuild": "ng test ngx-mousetrap && ng build ngx-mousetrap",
+    "prebuild": "ng test angular-mousetrap && ng build angular-mousetrap",
     "build": "ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:ngx-mousetrap": "ng test ngx-mousetrap && ng build ngx-mousetrap",
-    "publish": "npm run build:ngx-mousetrap && cd dist/ngx-mousetrap && npm publish"
+    "build:angular-mousetrap": "ng test angular-mousetrap && ng build angular-mousetrap",
+    "publish": "npm run build:angular-mousetrap && cd dist/angular-mousetrap && npm publish"
   },
   "private": true,
   "dependencies": {

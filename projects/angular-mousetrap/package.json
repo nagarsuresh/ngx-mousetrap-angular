@@ -1,18 +1,18 @@
 {
-  "name": "ngx-mousetrap",
-  "version": "13.0.0",
+  "name": "angular-mousetrap",
+  "version": "15.0.0",
   "peerDependencies": {
-    "@angular/common": "15.1.4",
-    "@angular/core": "15.1.4",
+    "@angular/common": "^15.1.4",
+    "@angular/core": "^15.1.4",
     "mousetrap": "^1.6.5"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nagarsuresh/ngx-mousetrap-angular.git"
+    "url": "https://github.com/mahrmediait/angular-mousetrap.git"
   },
   "devDependencies": {
-    "@angular/common": "15.1.4",
-    "@angular/core": "15.1.4",
+    "@angular/common": "^15.1.4",
+    "@angular/core": "^15.1.4",
     "mousetrap": "^1.6.5"
   },
   "dependencies": {
