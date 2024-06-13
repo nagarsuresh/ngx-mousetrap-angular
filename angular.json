@@ -139,36 +139,36 @@
         }
       }
     },
-    "ngx-mousetrap": {
+    "angular-mousetrap": {
       "projectType": "library",
-      "root": "projects/ngx-mousetrap",
-      "sourceRoot": "projects/ngx-mousetrap/src",
+      "root": "projects/angular-mousetrap",
+      "sourceRoot": "projects/angular-mousetrap/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-mousetrap/tsconfig.lib.json",
-            "project": "projects/ngx-mousetrap/ng-package.json"
+            "tsConfig": "projects/angular-mousetrap/tsconfig.lib.json",
+            "project": "projects/angular-mousetrap/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-mousetrap/tsconfig.lib.prod.json"
+              "tsConfig": "projects/angular-mousetrap/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-mousetrap/src/test.ts",
-            "tsConfig": "projects/ngx-mousetrap/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-mousetrap/karma.conf.js"
+            "main": "projects/angular-mousetrap/src/test.ts",
+            "tsConfig": "projects/angular-mousetrap/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-mousetrap/karma.conf.js"
           }
         }
       }
     }
   },
-  "defaultProject": "ngx-mousetrap-angular",
+  "defaultProject": "angular-mousetrap",
   "cli": {
     "analytics": "0120fdf9-3dac-4a01-83dd-e354025467f5"
   }

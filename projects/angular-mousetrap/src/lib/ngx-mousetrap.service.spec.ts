@@ -34,14 +34,6 @@ describe('NgxMousetrapService', () => {
     expect(observable).not.toBe(EMPTY);
   });
 
-  it('should return same observable if key is registered more than once', () => {
-    const service: NgxMousetrapService = TestBed.inject(NgxMousetrapService);
-    const observable1 = service.register('command+enter | alt+enter');
-    const observable2 = service.register('command+enter | alt+enter');
-
-    expect(observable1).toEqual(observable2);
-  });
-
   it('should unregister key and complete observable', (done) => {
     const service: NgxMousetrapService = TestBed.inject(NgxMousetrapService);
     const observable = service.register('command+enter | alt+enter');

@@ -21,7 +21,7 @@ class TestHotKeyDirectiveComponent {
   clicked() { }
 }
 
-describe('NgxMousetrapDirective', () => {
+describe('git ', () => {
   let component: TestHotKeyDirectiveComponent;
   let fixture: ComponentFixture<TestHotKeyDirectiveComponent>;
   let debugEl: DebugElement;

@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { NgxMousetrapService } from 'projects/ngx-mousetrap/src/public-api';
+import { NgxMousetrapService } from 'projects/angular-mousetrap/src/public-api';
 import { Subscription } from 'rxjs';
 
 @Component({
